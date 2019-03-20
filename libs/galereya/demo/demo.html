@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Demo">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+  <title>Galereya. Demo.</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Scada:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../src/css/jquery.galereya.css">
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="../src/css/jquery.galereya.ie.css">
+      <![endif]-->
+      <style>
+      body {
+        font-family: 'Scada', sans-serif;
+        background: #f6f6f6;
+        color: #212121;
+      }
+
+      .galereya-top {
+        position: fixed;
+
+        background: #f6f6f6;
+        background: rgba(246, 246, 246, 0.7);
+      }
+
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 left-side">
+          <header>
+            <div class="logo">
+              <h1>Фотограф Яна Михаелис</h1>
+            </div>
+            <nav>
+              <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li class="portfolio__toggle">
+                  <a href="#">Портфолио</a>
+                  <i class="fas fa-chevron-right"></i>
+                  <ul class="portfolio__dropdown">
+                    <li><a href="#">Портреты</a></li>
+                    <li><a href="#">Love-story</a></li>
+                    <li><a href="#">Свадьбы</a></li>
+                    <li><a href="#">Предметная</a></li>
+                    <li><a href="#">food фото</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Прайс</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="social">
+              <ul>
+                <li><a href="https://vk.com/id152769223"><i class="fab fa-vk"></i></a></li>
+                <li><a href="https://www.instagram.com/yana_yeti/"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </header>
+
+        <div class="col-md-10 right-side">
+          <div id="gallery"></div>
+          <footer>
+            Galereya
+          </footer>
+
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+          <script src="../src/js/jquery.galereya.js"></script>
+          <script>
+            $(function() {
+              $('#gallery').galereya({
+                load: function(next) {
+                  $.getJSON('images.json', function(data) {
+                    next(data);
+                  });
+                }
+              });
+            });
+          </script>
+
+        </div>
+
+      </body>
+      </html>

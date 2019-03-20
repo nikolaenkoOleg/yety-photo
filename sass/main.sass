@@ -1,0 +1,161 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+html 
+  overflow-y: scroll
+
+
+li
+	list-style: none
+a
+	text-decoration: none
+	outline: none	
+	transition: color .25s ease
+	&:hover
+		text-decoration: none
+
+// -------------------------------LEFT--------------------------------
+aside
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	left: 0
+	position: fixed
+	width: 19%
+	height: 100vh
+	background-color: #DAE5E8  //#EBFBFF
+	header
+		.logo
+			width: 100%
+			height: 315px
+			min-height: 515px
+			background: url(../img/Yeti_Photo.png) top center no-repeat 
+			background-size: contain
+	content
+		#hamburger
+			display: none
+		text
+			display: none
+		nav
+			ul.menu
+				text-transform: uppercase
+				margin-bottom: 0
+				margin-top: -230px
+			li
+				transition: transform .5s ease
+				&:hover
+					color: #000
+					transform: scale(1.05)
+				a
+					font-family: 'AmaticRegular', sans-serif
+					color: $accent
+					font-size: 40px
+					padding: 5px 15px 5px 15px
+					position: relative
+					&:hover
+						color: #000
+	footer
+		.social
+			ul
+				display: flex
+				justify-content: start
+				margin-left: 15px
+				.fa-vk,
+				.fa-instagram
+						color: $accent
+						margin-right: 10px
+						font-size: 34px
+						transition: color .5s ease
+						&:hover
+							color: #000
+		address
+			margin-left: 53px
+			.city
+				color: $accent
+				font-size: 12px
+				p
+					margin-bottom: 0		
+			.phone
+				a
+					color: #2E3237
+					font-size: 12px
+					margin-top: -17px
+
+// -------------------------------RIGHT---------------------------------
+.portfolio
+	background-color: #fff
+	height: auto
+	padding: 0
+	position: absolute
+	width: 81%
+	left: 19%
+	&-logo
+		text-align: center
+		font-size: 60px
+		font-family: 'AmaticRegular', sans-serif
+		margin-top: 50px
+	.portfolio-info
+		text-align: center
+		font-family: 'RobotoRegular', sans-serif
+		font-size: 19px
+		position: relative
+		top: 10px
+		opacity: 0
+		margin-bottom: 0
+		margin-top: 30px
+	.portfolio-menu
+		margin-top: 30px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		font-family: 'AmaticBold', sans-serif
+		width: 100%
+		font-size: 29px
+		li
+			cursor: pointer
+			padding: 5px
+			margin-right: 10px
+			transition: all .5s ease
+			&::after
+				content: ""
+				display: block
+				width: 0%
+				height: 1px
+				background-color: $accent
+				transition: width .5s ease-in-out, left .5s ease-in-out
+				position: absolute
+				left: 50%
+				bottom: 0
+			&:last-child
+				margin-right: 0
+		.active
+			transform: scale(1.2)
+			&::after
+				width: 100%
+				left: 0 
+
+.galereya-grid
+	top: 0
+
+.galereya-top
+	width: 0
+	height: 0
+
+.galereya-cats
+	display: none
+
+.galereya-cell-desc-text,
+	font-family: 'RobotoRegular', sans-serif
+	font-size: 13px
+
+.galereya-slider-desc
+	font-family: 'RobotoRegular', sans-serif
+	font-size: 15px
+
+.galereya-cell
+	transition: transform .5s ease
+	&:hover
+		transform: scale(1.02)
+
+@import "media" // Always at the end
