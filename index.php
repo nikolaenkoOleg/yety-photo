@@ -41,6 +41,7 @@
 		<?php require('template/footer.php') ?>
 	</aside>
 	<main class="portfolio">
+		<h1>Портфолио</h1>
 		<h2 class="portfolio-logo">Портфолио</h2>	
 		<ul class="portfolio-menu">
 			<li class="all">Все работы</li>
