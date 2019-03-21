@@ -10,30 +10,41 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 992px)
-	/**/
-
+	aside
+		header
+			.logo
+				background-size: contain
+		.menu
+			li
+				a
+					font-size: 33px
+					margin-left: -29px
+		footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-left: 0
+			.social
+				ul
+					display: flex
+					justify-content: center
+					margin-left: 0
+					padding-left: 0
+					.fa-vk,
+					.fa-instagram	
+							font-size: 26px
+							padding: 3px
+			address
+				text-align: center
+				margin-left: 0
+				.city
+					font-size: 13px		
+				.phone
+					a
+						font-size: 13px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-@media only screen and (max-width : 320px)	
-	/**/
-
-
-/* Large Devices, Wide Screens */
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
 	aside
 		display: block
 		width: 100%
@@ -45,19 +56,141 @@
 			nav
 				ul.menu
 					margin-top: 0
+					margin-left: 0
+					li
+						a
+							color: $accent
+							font-size: 35px
+							padding-left: 0
+							padding-right: 0
+							margin-left: 0
+		footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-left: 0
+			margin-top: 25px
+			.social
+				ul
+					display: flex
+					justify-content: center
+					margin-left: 0
+					padding-left: 0
+					.fa-vk,
+					.fa-instagram	
+							font-size: 30px
+							padding: 3px
+			address
+				text-align: center
+				margin-left: 0
+				.city
+					font-size: 13px		
+				.phone
+					a
+						font-size: 13px
+	.portfolio
+		width: 100%
+		position: absolute
+		left: 0
+		.portfolio-logo
+			font-size: 50px
+		.portfolio-menu
+			margin-top: 10px
+			padding-left: 0
+			flex-direction: column
+			align-items: center
+			font-size: 25px
+			li
+				margin-right: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 480px)
+	aside
+		display: block
+		width: 100%
+		position: relative
+		header
+			.logo
+				min-height: 430px
+		content
+			nav
+				ul.menu
+					margin-top: 0
+					margin-left: 0
+					li
+						a
+							color: $accent
+							font-size: 30px
+							padding-left: 0
+							padding-right: 0
+							margin-left: 0
+		footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-left: 0
+			.social
+				ul
+					display: flex
+					justify-content: center
+					margin-left: 0
+					padding-left: 0
+					.fa-vk,
+					.fa-instagram	
+							font-size: 30px
+							padding: 3px
+			address
+				text-align: center
+				margin-left: 0
+				.city
+					font-size: 13px		
+				.phone
+					a
+						font-size: 13px
+	.portfolio
+		width: 100%
+		position: absolute
+		left: 0
+		.portfolio-logo
+			font-size: 50px
+		.portfolio-menu
+			margin-top: 10px
+			padding-left: 0
+			flex-direction: column
+			align-items: center
+			font-size: 25px
+			li
+				margin-right: 0
+
+@media only screen and (max-width : 320px)	
+	aside
+		display: block
+		width: 100%
+		position: relative
+		header
+			.logo
+				min-height: 430px
+		content
+			nav
+				ul.menu
+					margin-top: 0
+					margin-left: 0
 					li
 						a
 							color: $accent
 							font-size: 30px
 							padding-right: 0
 							padding-left: 0
+							margin-left: 0
 		footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-left: 0
 			.social
 				ul
 					display: flex
 					justify-content: center
-					padding: 0
-					margin-left: 0
 					.fa-vk,
 					.fa-instagram	
 							font-size: 25px
@@ -83,142 +216,25 @@
 			font-size: 25px
 			li
 				margin-right: 0
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	aside
-		display: block
-		width: 100%
-		position: relative
-		header
-			.logo
-				min-height: 430px
-		content
-			nav
-				ul.menu
-					margin-top: 0
-					li
-						a
-							color: $accent
-							font-size: 30px
-		footer
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 30px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
-	.portfolio
-		width: 100%
-		position: absolute
-		left: 0
-		.portfolio-logo
-			font-size: 50px
-		.portfolio-menu
-			margin-top: 10px
-			padding-left: 0
-			flex-direction: column
-			align-items: center
-			font-size: 25px
-			li
-				margin-right: 0
-
+	/**/
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	aside
-		display: block
-		width: 100%
-		position: relative
-		header
-			.logo
-				min-height: 430px
-		content
-			nav
-				ul.menu
-					margin-top: 0
-					li
-						a
-							color: $accent
-							font-size: 35px
-		footer
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 30px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
-	.portfolio
-		width: 100%
-		position: absolute
-		left: 0
-		.portfolio-logo
-			font-size: 50px
-		.portfolio-menu
-			margin-top: 10px
-			padding-left: 0
-			flex-direction: column
-			align-items: center
-			font-size: 25px
-			li
-				margin-right: 0
-
-
+	/**/	
+	
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	aside
-		header
-			.logo
-				background-size: contain
-		.menu
-			li
-				a
-					font-size: 33px
-					margin-left: -29px
-		footer
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 26px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
-
+@media only screen and (max-width : 992px)
+	/**/	
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
