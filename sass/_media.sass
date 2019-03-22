@@ -5,7 +5,39 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 1200px)
-	/**/
+	aside
+		header
+			.logo
+				background-size: contain
+				min-height: 400px
+		ul.menu
+			padding-left: 15px
+			li
+				a
+					font-size: 37px
+		footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-left: 0
+			.social
+				ul
+					display: flex
+					justify-content: center
+					margin-left: 0
+					padding-left: 0
+					.fa-vk,
+					.fa-instagram	
+							font-size: 26px
+							padding: 3px
+			address
+				text-align: center
+				margin-left: 0
+				.city
+					font-size: 13px		
+				.phone
+					a
+						font-size: 13px
 
 
 /* Extra Small Devices, Phones */
@@ -14,11 +46,13 @@
 		header
 			.logo
 				background-size: contain
-		.menu
+				min-height: 400px
+		ul.menu
+			margin-left: 0
+			padding-left: 0
 			li
 				a
 					font-size: 33px
-					margin-left: -29px
 		footer
 			display: flex
 			flex-direction: column

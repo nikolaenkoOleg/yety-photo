@@ -16,11 +16,6 @@
     background-color: #3d88ce;
     background-color: rgba(255, 255, 255, .9);
   }
-  @media (min-width: 768px) {
-    .drawer-list {
-      width: 40vw;
-    }
-  }
   .drawer-list ul {
     height: 100%;
     width: 100%;
@@ -329,11 +324,6 @@
     border-bottom-left-radius: 100vw;
     background-color: #3d88ce;
     background-color: rgba(255, 255, 255, .9);
-  }
-  @media (min-width: 768px) {
-    .drawer-list {
-      width: 40vw;
-    }
   }
   .drawer-list ul {
     height: 100%;
@@ -662,11 +652,6 @@
     background-color: #3d88ce;
     background-color: rgba(255, 255, 255, .9);
   }
-  @media (min-width: 768px) {
-    .drawer-list {
-      width: 40vw;
-    }
-  }
   .drawer-list ul {
     height: 100%;
     width: 100%;
@@ -696,12 +681,6 @@
     display: block;
     padding: 1rem;
     font-size: calc(24px - .5vw);
-  }
-  @media (min-width: 768px) {
-    .drawer-list li a {
-      text-align: right;
-      padding: .5rem;
-    }
   }
   .drawer-list li a:hover {
     cursor: pointer;

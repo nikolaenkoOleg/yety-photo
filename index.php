@@ -33,15 +33,13 @@
     <link rel="stylesheet" href="libs/galereya/dist/css/jquery.galereya.ie.css">
   <![endif]-->
 </head>
-
-<body>
+<body> 
 	<aside>
 		<?php require('template/header.php') ?>
 		<?php require('template/navigation.php') ?>
 		<?php require('template/footer.php') ?>
 	</aside>
 	<main class="portfolio">
-		<h1>Портфолио</h1>
 		<h2 class="portfolio-logo">Портфолио</h2>	
 		<ul class="portfolio-menu">
 			<li class="all">Все работы</li>
