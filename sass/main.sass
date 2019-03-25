@@ -167,10 +167,12 @@ aside
 //-------------------------------------------PRICE
 
 .price
-	position: absolute
-	left: 19%
-	width: 81%
-	height: auto
+	&__wrapper
+		position: absolute
+		left: 19%
+		width: 81%
+		height: auto
+		font-size: 20px
 	&__head
 		font-family: 'AmaticBold', sans-serif
 		font-size: 60px
@@ -179,11 +181,32 @@ aside
 	&__block
 		display: flex
 		align-items: center
-	&__img
 		margin-left: 100px
+		&-first-child
+			margin-top: 0
+		&:nth-child(2n)
+			flex-direction: row-reverse
+			margin-right: 100px
+	&__list-elem
+		list-style-type: circle
 	&__description
+		margin-left: 50px
+		&:nth-child(2n)
+			margin-right: 50px
+
+.certificate
+	&__wrapper
+		width: 800px
+		font-size: 20px
+	&__name
+		margin-left: 100px
+	&__info
 		margin-left: 100px
 
-
+.extra-services
+	&__wrapper
+		margin-left: 100px
+	&__list-elem
+		list-style-type: circle
 
 @import "media" // Always at the end
