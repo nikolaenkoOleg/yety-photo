@@ -25,13 +25,43 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/hamburger.css">
-<!-- 	<link rel="stylesheet" href="libs/revealator/fm.revealator.jquery.min.css"> -->
+	<!-- 	<link rel="stylesheet" href="libs/revealator/fm.revealator.jquery.min.css"> -->
 </head>
 <body>
 	<aside>
-		<?php require('template/header.php') ?>
-		<?php require('template/navigation.php') ?>
-		<?php require('template/footer.php') ?>
+		<header>
+			<div class="logo"></div>
+		</header>
+		<content>
+			<input id="hamburger" class="hamburger" type="checkbox"/>
+			<label class="hamburger" for="hamburger">
+				<i></i>
+			</label>
+			<nav class="drawer-list">
+				<ul class="menu">
+					<li><a href="../index.php">Портфолио</a></li>
+					<li><a href="../about.php">Обо мне</a></li>
+					<li><a href="../price.php">Прайс</a></li>
+					<li><a href="../contact.php">Контакты</a></li>
+				</ul>
+			</nav>
+		</content>
+		<footer>
+			<div class="social">
+				<ul>
+					<li><a href="https://vk.com/id152769223"><i class="fab fa-vk"></i></a></li>
+					<li><a href="https://www.instagram.com/yana_yeti/"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<address>
+				<div class="city">
+					<p>Хабаровск 2019</p>
+				</div>
+				<div class="phone">
+					<a href="tel:8990853877">8 999 085-38-77</a>
+				</div>
+			</address>
+		</footer>
 	</aside>
 	<div class="price">
 		<div class="price__wrapper">
@@ -129,6 +159,6 @@
 			</div>			
 		</div>
 	</div>
-<!-- 	<script src="libs/revealator/fm.revealator.jquery.min.js"></script> -->
+	<!-- 	<script src="libs/revealator/fm.revealator.jquery.min.js"></script> -->
 </body>
 </html>
