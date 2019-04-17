@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
 	<title> Фотограф Яна Михаелис | Фотограф в Хабаровске</title>
 	<meta name="description" content="">
@@ -13,83 +12,69 @@
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
+
 	<link rel="shortcut icon" href="img/favicon/malenkaya_khuynya(1).png" type="image/x-icon">
 
-	<!-- Template Basic Images End -->
-
-	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="../css/normalize.css">
+
 	<script type="text/javascript" src="libs/jquery/dist/jquery-1.9.1.min.js"></script>
 	<link rel="stylesheet" href="libs/galereya/dist/css/jquery.galereya.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<script type="text/javascript" src="libs/galereya/dist/js/jquery.galereya.js"></script>
-	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/hamburger.css">
 
-<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
     <link rel="stylesheet" href="libs/galereya/dist/css/jquery.galereya.ie.css">
   <![endif]-->
 </head>
-<body> 
-	<aside>
-		<header>
-			<div class="logo"></div>
-		</header>
-		<content>
-			<input id="hamburger" class="hamburger" type="checkbox"/>
-			<label class="hamburger" for="hamburger">
-				<i></i>
-			</label>
-			<nav class="drawer-list">
-				<ul class="menu">
-					<li><a href="index.html">Портфолио</a></li>
-					<li><a href="about.html">Обо мне</a></li>
-					<li><a href="price.html">Прайс</a></li>
-					<li><a href="contact.html">Контакты</a></li>
-				</ul>
-			</nav>
-		</content>
-		<footer>
-			<div class="social">
-				<ul>
-					<li><a href="https://vk.com/id152769223"><i class="fab fa-vk"></i></a></li>
-					<li><a href="https://www.instagram.com/yana_yeti/"><i class="fab fa-instagram"></i></a></li>
-				</ul>
-			</div>
-			<address>
-				<div class="city">
-					<p>Хабаровск 2019</p>
-				</div>
-				<div class="phone">
-					<a href="tel:8990853877">8 999 085-38-77</a>
-				</div>
-			</address>
-		</footer>
-	</aside>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<content>
+					<input id="hamburger" class="hamburger" type="checkbox">
+					<label class="hamburger" for="hamburger">
+						<i></i>
+					</label>
+					<nav class="header__nav drawer-list">
+						<ul class="header__list menu">
+							<li class="header__list-elem"><a href="index.html" class="header__list-link">Портфолио</a></li>
+							<li class="header__list-elem"><a href="about.html" class="header__list-link">Обо мне</a></li>
+							<li class="header__list-elem"><img src="img/main-logo.png" alt="yety-photo" class="header__list-img"></li>
+							<li class="header__list-elem"><a href="price.html" class="header__list-link">Прайс</a></li>
+							<li class="header__list-elem"><a href="contact.html" class="header__list-link">Контакты</a></li>
+						</ul>
+					</nav>
+				</content>
+		</div>
+	</header>
+
 	<main class="portfolio">
-		<h2 class="portfolio-logo">Портфолио</h2>	
-		<ul class="portfolio-menu">
+		<h2 class="portfolio__logo">Портфолио</h2>
+		<ul class="portfolio__menu">
 			<li class="all">Все работы</li>
 			<li class="lovestory">love-story</li>
 			<li class="portraits">Портреты</li>
 			<li class="subjects">Предметная</li>
 			<li class="food">food фото</li>
-		</ul>	
-		<div class="portfolio-description">
-			
-		</div>
+		</ul>
+
+		<div class="portfolio-description"></div>
 		<div id="gallery">
 			<script>
-				$(function() {
+				$(function () {
 					$('#gallery').galereya({
 						slideShowSpeed: 1000,
 						wave: false,
 						spacing: 8,
-						load: function(next) {
-							$.getJSON('images.json', function(data) {
+						load: function (next) {
+							$.getJSON('images.json', function (data) {
 								next(data);
 							});
 						}
@@ -97,7 +82,32 @@
 				});
 			</script>
 		</div>
-		<script type="text/javascript" src="js/common.js"></script>	
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<ul class="footer__social">
+						<li class="footer__social-elem">
+							<a href="https://vk.com/id152769223" class="footer__social-link">
+								<i class="fab fa-vk footer__social-ico"></i>
+							</a>
+						</li>
+						<li class="footer__social-elem">
+							<a href="https://www.instagram.com/yana_yeti/" class="footer__social-link">
+								<i class="fab fa-instagram footer__social-ico"></i>
+							</a>
+						</li>
+				</ul>
+				<address class="footer__address">
+					<p class="footer__city">Хабаровск 2019</p>
+					<a class="footer__phone" href="tel:8990853877">8 999 085-38-77</a>
+				</address>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/common.js"></script>
 </body>
+
 </html>

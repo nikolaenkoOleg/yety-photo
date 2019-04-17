@@ -10,12 +10,12 @@ $(document).ready(function(){
 	});
 
 	//при клике на горизонтальное меню, происходит перебор всех элементов и удаляется класс "active"
-	$('.portfolio-menu li').on('click', function(e){
+	$('.portfolio__menu li').on('click', function(e){
 		e.preventDefault();
 
-		for(var i = 0; i <= ($('.portfolio-menu').children().length); i++){
-			if($('.portfolio-menu li').hasClass('active')){
-				$('.portfolio-menu li').removeClass('active');
+		for(var i = 0; i <= ($('.portfolio__menu').children().length); i++){
+			if($('.portfolio__menu li').hasClass('active')){
+				$('.portfolio__menu li').removeClass('active');
 			}
 		}
 
