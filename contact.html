@@ -22,45 +22,53 @@
 
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/hamburger.css">
 </head>
 <body>
-	<h1>контакты</h1>
-	<aside>
-		<header>
-			<div class="logo"></div>
-		</header>
-		<content>
-			<input id="hamburger" class="hamburger" type="checkbox"/>
-			<label class="hamburger" for="hamburger">
-				<i></i>
-			</label>
-			<nav class="drawer-list">
-				<ul class="menu">
-					<li><a href="index.html">Портфолио</a></li>
-					<li><a href="about.html">Обо мне</a></li>
-					<li><a href="price.html">Прайс</a></li>
-					<li><a href="contact.html">Контакты</a></li>
+
+	<header class="header">
+		<div class="container">
+			<content>
+					<input id="hamburger" class="hamburger" type="checkbox">
+					<label class="hamburger" for="hamburger">
+						<i></i>
+					</label>
+					<nav class="header__nav drawer-list">
+						<ul class="header__list menu">
+							<li class="header__list-elem"><a href="index.html" class="header__list-link">Портфолио</a></li>
+							<li class="header__list-elem"><a href="about.html" class="header__list-link">Обо мне</a></li>
+							<li class="header__list-elem"><img src="img/main-logo.png" alt="yety-photo" class="header__list-img"></li>
+							<li class="header__list-elem"><a href="price.html" class="header__list-link">Прайс</a></li>
+							<li class="header__list-elem"><a href="contact.html" class="header__list-link">Контакты</a></li>
+						</ul>
+					</nav>
+				</content>
+		</div>
+	</header>
+	<h1>Контакты</h1>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<ul class="footer__social">
+						<li class="footer__social-elem">
+							<a href="https://vk.com/id152769223" class="footer__social-link">
+								<i class="fab fa-vk footer__social-ico"></i>
+							</a>
+						</li>
+						<li class="footer__social-elem">
+							<a href="https://www.instagram.com/yana_yeti/" class="footer__social-link">
+								<i class="fab fa-instagram footer__social-ico"></i>
+							</a>
+						</li>
 				</ul>
-			</nav>
-		</content>
-		<footer>
-			<div class="social">
-				<ul>
-					<li><a href="https://vk.com/id152769223"><i class="fab fa-vk"></i></a></li>
-					<li><a href="https://www.instagram.com/yana_yeti/"><i class="fab fa-instagram"></i></a></li>
-				</ul>
+				<address class="footer__address">
+					<p class="footer__city">Хабаровск 2019</p>
+					<a class="footer__phone" href="tel:8990853877">8 999 085-38-77</a>
+				</address>
 			</div>
-			<address>
-				<div class="city">
-					<p>Хабаровск 2019</p>
-				</div>
-				<div class="phone">
-					<a href="tel:8990853877">8 999 085-38-77</a>
-				</div>
-			</address>
-		</footer>
-	</aside>
+		</div>
+	</footer>
+
 </body>
 </html>

@@ -46,8 +46,9 @@
   src: url("../fonts/SundayRegular/SundayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SundayRegular/SundayRegular.woff") format("woff"), url("../fonts/SundayRegular/SundayRegular.ttf") format("truetype");
 }
 
-html {
+body {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 li {
@@ -65,8 +66,13 @@ a:hover {
   text-decoration: none;
 }
 
+main {
+  min-height: calc(100vh - 140.4px);
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -154,6 +160,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 
 .footer__social {
@@ -372,193 +379,41 @@ a:hover {
 }
 
 /*==========  Desktop First  ==========*/
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 1200px) {
-  aside header .logo {
-    background-size: contain;
-    min-height: 400px;
-  }
-  aside ul.menu {
-    padding-left: 15px;
-  }
-  aside ul.menu li a {
-    font-size: 37px;
-  }
-  aside footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-  }
-  aside footer .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  aside footer .social ul .fa-vk,
-  aside footer .social ul .fa-instagram {
-    font-size: 26px;
-    padding: 3px;
-  }
-  aside footer address {
-    text-align: center;
-    margin-left: 0;
-  }
-  aside footer address .city {
-    font-size: 13px;
-  }
-  aside footer address .phone a {
-    font-size: 13px;
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 992px) {
-  aside header .logo {
-    background-size: contain;
-    min-height: 400px;
-  }
-  aside ul.menu {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  aside ul.menu li a {
-    font-size: 33px;
-  }
-  aside footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-  }
-  aside footer .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  aside footer .social ul .fa-vk,
-  aside footer .social ul .fa-instagram {
-    font-size: 26px;
-    padding: 3px;
-  }
-  aside footer address {
-    text-align: center;
-    margin-left: 0;
-  }
-  aside footer address .city {
-    font-size: 13px;
-  }
-  aside footer address .phone a {
-    font-size: 13px;
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  aside {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-  aside header .logo {
-    min-height: 430px;
-  }
-  aside content nav ul.menu {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  aside content nav ul.menu li a {
-    color: #2E3237;
-    font-size: 35px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-  }
-  aside footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-    margin-top: 25px;
-  }
-  aside footer .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  aside footer .social ul .fa-vk,
-  aside footer .social ul .fa-instagram {
+  .header__list-link {
     font-size: 30px;
-    padding: 3px;
   }
-  aside footer address {
-    text-align: center;
-    margin-left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  aside footer address .city {
-    font-size: 13px;
-  }
-  aside footer address .phone a {
-    font-size: 13px;
-  }
-  .portfolio {
-    width: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .portfolio .portfolio-logo {
-    font-size: 50px;
-  }
-  .portfolio .portfolio-menu {
-    margin-top: 10px;
-    padding-left: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .portfolio__menu li {
     font-size: 25px;
   }
-  .portfolio .portfolio-menu li {
-    margin-right: 0;
+  .header {
+    background: url("../img/main-logo.png") no-repeat 50% 0%;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+  }
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__list-elem:nth-child(3) {
+    display: none;
   }
   .price__wrapper {
     display: -webkit-box;
@@ -621,29 +476,7 @@ a:hover {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 480px) {
-  aside {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-  aside header .logo {
-    min-height: 430px;
-  }
-  aside content nav ul.menu {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  aside content nav ul.menu li a {
-    color: #2E3237;
-    font-size: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-  }
-  aside footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .portfolio__menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -651,55 +484,13 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 0;
   }
-  aside footer .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
+  .portfolio__menu li {
+    margin: 0 0 10px 0;
   }
-  aside footer .social ul .fa-vk,
-  aside footer .social ul .fa-instagram {
-    font-size: 30px;
-    padding: 3px;
-  }
-  aside footer address {
-    text-align: center;
-    margin-left: 0;
-  }
-  aside footer address .city {
-    font-size: 13px;
-  }
-  aside footer address .phone a {
-    font-size: 13px;
-  }
-  .portfolio {
-    width: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .portfolio .portfolio-logo {
-    font-size: 50px;
-  }
-  .portfolio .portfolio-menu {
-    margin-top: 10px;
-    padding-left: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 25px;
-  }
-  .portfolio .portfolio-menu li {
-    margin-right: 0;
+  .portfolio__menu li:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .price__wrapper {
     display: -webkit-box;
@@ -761,83 +552,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 320px) {
-  aside {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-  aside header .logo {
-    min-height: 430px;
-  }
-  aside content nav ul.menu {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  aside content nav ul.menu li a {
-    color: #2E3237;
-    font-size: 30px;
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  aside footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0;
-  }
-  aside footer .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  aside footer .social ul .fa-vk,
-  aside footer .social ul .fa-instagram {
-    font-size: 25px;
-  }
-  aside footer address {
-    text-align: center;
-    margin-left: 0;
-  }
-  aside footer address .city {
-    font-size: 11px;
-  }
-  aside footer address .phone a {
-    font-size: 11px;
-  }
-  .portfolio {
-    width: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .portfolio .portfolio-logo {
-    font-size: 50px;
-  }
-  .portfolio .portfolio-menu {
-    margin-top: 10px;
-    padding-left: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 25px;
-  }
-  .portfolio .portfolio-menu li {
-    margin-right: 0;
-  }
   .price__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

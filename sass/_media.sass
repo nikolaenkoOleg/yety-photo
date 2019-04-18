@@ -1,139 +1,31 @@
 /*==========  Desktop First  ==========*/
 
-/* Custom, iPhone Retina */
 @media only screen and (max-width : 1200px)
-	aside
-		header
-			.logo
-				background-size: contain
-				min-height: 400px
-		ul.menu
-			padding-left: 15px
-			li
-				a
-					font-size: 37px
-		footer
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-left: 0
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 26px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
+	.header
+		&__list
+		&__list-link
+			font-size: 30px
 
-
-/* Extra Small Devices, Phones */
 @media only screen and (max-width : 992px)
-	aside
-		header
-			.logo
-				background-size: contain
-				min-height: 400px
-		ul.menu
-			margin-left: 0
-			padding-left: 0
-			li
-				a
-					font-size: 33px
-		footer
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-left: 0
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 26px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
+	/**/
 
-/* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	aside
-		display: block
-		width: 100%
-		position: relative
-		header
-			.logo
-				min-height: 430px
-		content
-			nav
-				ul.menu
-					margin-top: 0
-					margin-left: 0
-					li
-						a
-							color: #2E3237
-							font-size: 35px
-							padding-left: 0
-							padding-right: 0
-							margin-left: 0
-		footer
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-left: 0
-			margin-top: 25px
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 30px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
 	.portfolio
-		width: 100%
-		position: absolute
-		left: 0
-		.portfolio-logo
-			font-size: 50px
-		.portfolio-menu
-			margin-top: 10px
-			padding-left: 0
-			flex-direction: column
-			align-items: center
-			font-size: 25px
+		&__menu
+			justify-content: space-around
 			li
-				margin-right: 0
-
+				font-size: 25px
+	.header
+		background: url('../img/main-logo.png') no-repeat 50% 0%
+		background-size: contain
+		height: 100vh
+		width: 100%
+		&__list
+			flex-direction: column
+			justify-content: start
+		&__list-elem
+			&:nth-child(3)
+				display: none
 	.price
 		&__wrapper
 			display: flex
@@ -176,63 +68,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 480px)
-	aside
-		display: block
-		width: 100%
-		position: relative
-		header
-			.logo
-				min-height: 430px
-		content
-			nav
-				ul.menu
-					margin-top: 0
-					margin-left: 0
-					li
-						a
-							color: #2E3237
-							font-size: 30px
-							padding-left: 0
-							padding-right: 0
-							margin-left: 0
-		footer
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-left: 0
-			.social
-				ul
-					display: flex
-					justify-content: center
-					margin-left: 0
-					padding-left: 0
-					.fa-vk,
-					.fa-instagram	
-							font-size: 30px
-							padding: 3px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 13px		
-				.phone
-					a
-						font-size: 13px
 	.portfolio
-		width: 100%
-		position: absolute
-		left: 0
-		.portfolio-logo
-			font-size: 50px
-		.portfolio-menu
-			margin-top: 10px
-			padding-left: 0
+		&__menu
 			flex-direction: column
 			align-items: center
-			font-size: 25px
 			li
-				margin-right: 0
-
+				margin: 0 0 10px 0
+				&:hover
+					transform: scale(1)
 	.price
 		&__wrapper
 			display: flex
@@ -273,61 +116,7 @@
 			font-size: 17px
 			padding: 0 10px 0 10px
 
-@media only screen and (max-width : 320px)	
-	aside
-		display: block
-		width: 100%
-		position: relative
-		header
-			.logo
-				min-height: 430px
-		content
-			nav
-				ul.menu
-					margin-top: 0
-					margin-left: 0
-					li
-						a
-							color: #2E3237
-							font-size: 30px
-							padding-right: 0
-							padding-left: 0
-							margin-left: 0
-		footer
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-left: 0
-			.social
-				ul
-					display: flex
-					justify-content: center
-					.fa-vk,
-					.fa-instagram	
-							font-size: 25px
-			address
-				text-align: center
-				margin-left: 0
-				.city
-					font-size: 11px		
-				.phone
-					a
-						font-size: 11px
-	.portfolio
-		width: 100%
-		position: absolute
-		left: 0
-		.portfolio-logo
-			font-size: 50px
-		.portfolio-menu
-			margin-top: 10px
-			padding-left: 0
-			flex-direction: column
-			align-items: center
-			font-size: 25px
-			li
-				margin-right: 0
-
+@media only screen and (max-width : 320px)
 	.price
 		&__wrapper
 			display: flex

@@ -1,6 +1,6 @@
 @media only screen and (max-width : 768px){
   .drawer-list {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     height: 100vh;
@@ -40,11 +40,12 @@
   }
   .drawer-list li a {
     text-decoration: none;
-    color: #FEFEFE;
+    color: #000;
     text-align: center;
     display: block;
     padding: 1rem;
-    font-size: calc(24px - .5vw);
+		font-size: 30px;
+		transition: background-color .5s ease;
   }
   .drawer-list li a:hover {
     cursor: pointer;
