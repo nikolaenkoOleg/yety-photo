@@ -46,6 +46,11 @@
   src: url("../fonts/SundayRegular/SundayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SundayRegular/SundayRegular.woff") format("woff"), url("../fonts/SundayRegular/SundayRegular.ttf") format("truetype");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
