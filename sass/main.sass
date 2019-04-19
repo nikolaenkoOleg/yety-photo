@@ -12,13 +12,18 @@ a
 	transition: color .25s ease
 	&:hover
 		text-decoration: none   
-main
-	min-height: calc(100vh - 140.4px)
+// main
+// 	min-height: calc(100vh - 140.4px)
 
-.container
+.container,
+.price-container
 	max-width: 1200px
 	width: auto
-	margin: 0 auto	
+	margin: 0 auto
+.price-container
+	background-color: #fff
+	box-shadow: 0px 20px 43px -14px rgba(0,0,0,0.63);
+
 
 .header
 	background-color: #DAE5E8
@@ -54,36 +59,6 @@ main
 			display: none
 		text
 			display: none
-
-.footer
-	background-color: #DAE5E8
-	&__wrap
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: space-between
-		margin-top: 30px
-	&__social
-		display: flex
-		justify-content: start
-		padding: 0
-		&-ico
-			color: #2E3237
-			margin-right: 5px
-			font-size: 34px
-			transition: color .5s ease
-			&:hover
-				color: #000
-	&__address
-		margin-bottom: 30px
-	&__city
-		color: #2E3237
-		font-size: 12px
-		margin-bottom: 0		
-	&__phone
-		color: #2E3237
-		font-size: 12px
-		margin-top: -17px
 
 .portfolio
 	&__logo
@@ -158,44 +133,100 @@ main
 //-------------------------------------------PRICE
 
 .price
-	&__wrapper
-		height: auto
-		font-size: 20px
+	background-color: #fff7f7
 	&__title
 		font-family: 'AmaticBold', sans-serif
 		font-size: 60px
 		text-align: center
-		margin-top: 50px
+		margin-top:	0
 	&__block
-		display: flex
-		align-items: center
-		margin-left: 100px
-		border: 1px solid red
-		&-first-child
-			margin-top: 0
-		&:nth-child(2n)
-			flex-direction: row-reverse
-			margin-right: 100px
-	&__list-elem
-		list-style-type: circle
+		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&-title
+			text-align: center
+			font-size: 40px
+			font-family: 'AmaticBold', sans-serif
+		&-img
+			width: 300px
+			height: auto
+	&__card
+		&-title
+			margin-left: 40px
+			font-size: 28px
+			font-family: 'AmaticBold', sans-serif
+		&-img-wrap-1
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			flex-wrap: wrap
+			height: 450px
+			width: 620px
+		&-img-wrap-2
+			display: flex
+			justify-content: space-between
+			width: 610px
+		&-wrap
+			width: 400px
+	&__cost
+		margin-left: 40px
+		font-size: 28px
+		font-family: 'AmaticBold', sans-serif
+	&__list
+		&-elem
+			list-style-type: circle
+			font-family: 'AmaticBold', sans-serif
+			font-size: 25px
+			margin-left: 30px
 	&__description
 		margin-left: 50px
 		&:nth-child(2n)
 			margin-right: 50px
 
+.love-story,
+.reportage
+	display: flex
+	align-items: center
+
 .certificate
 	&__wrapper
 		width: 800px
 		font-size: 20px
-	&__name
-		margin-left: 100px
-	&__info
-		margin-left: 100px
 
 .extra-services
-	&__wrapper
-		margin-left: 100px
+	&__list
+		margin-bottom: 0
 	&__list-elem
 		list-style-type: circle
+
+.footer
+	background-color: #DAE5E8
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+	&__social
+		display: flex
+		justify-content: start
+		padding: 0
+		&-ico
+			color: #2E3237
+			margin-right: 5px
+			font-size: 34px
+			transition: color .5s ease
+			&:hover
+				color: #000
+	&__address
+		margin-bottom: 30px
+	&__city
+		color: #2E3237
+		font-size: 12px
+		margin-bottom: 0		
+	&__phone
+		color: #2E3237
+		font-size: 12px
+		margin-top: -17px
 
 @import "media" // Always at the end
