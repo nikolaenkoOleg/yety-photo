@@ -134,7 +134,7 @@ a:hover {
 
 .header__list-img {
   width: auto;
-  height: 300px;
+  height: 150px;
 }
 
 .header content #hamburger {
@@ -274,10 +274,27 @@ a:hover {
           align-items: center;
 }
 
+.price__block-wrap-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .price__block-title {
   text-align: center;
   font-size: 40px;
   font-family: 'AmaticBold', sans-serif;
+}
+
+.price__block-title-line:first-child {
+  background: url(../img/left-line1.png) no-repeat 50% 50%;
+  background-size: contain;
+  height: 10px;
+  width: 450px;
+  margin-right: 10px;
 }
 
 .price__block-img {

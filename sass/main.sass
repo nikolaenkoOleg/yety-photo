@@ -12,8 +12,6 @@ a
 	transition: color .25s ease
 	&:hover
 		text-decoration: none   
-// main
-// 	min-height: calc(100vh - 140.4px)
 
 .container,
 .price-container
@@ -23,7 +21,6 @@ a
 .price-container
 	background-color: #fff
 	box-shadow: 0px 20px 43px -14px rgba(0,0,0,0.63);
-
 
 .header
 	background-color: #DAE5E8
@@ -53,7 +50,7 @@ a
 				color: #000
 		&-img
 			width: auto
-			height: 300px
+			height: 150px
 	content
 		#hamburger
 			display: none
@@ -144,10 +141,20 @@ a
 			display: flex
 			justify-content: space-between
 			align-items: center
+			&-title
+				display: flex
+				align-items: center
 		&-title
 			text-align: center
 			font-size: 40px
 			font-family: 'AmaticBold', sans-serif
+			&-line
+				&:first-child
+					background: url(../img/left-line1.png) no-repeat 50% 50%
+					background-size: contain
+					height: 10px
+					width: 450px
+					margin-right: 10px
 		&-img
 			width: 300px
 			height: auto
