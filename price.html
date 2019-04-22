@@ -14,7 +14,7 @@
 
 	<meta name="theme-color" content="#000">
 
-	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<script type="text/javascript" src="libs/jquery/dist/jquery-1.9.1.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -49,8 +49,9 @@
 		<div class="price-container">
 			<h1 class="price__title">Прайс</h1>
 
-			<div class="price__block revealator-slideup revealator-delay1 revealator-once">
-				<div class="price__block-wrap-title">
+			<div class="price__block revealator-slideup revealator-delay1 revealator-once" id="price-block1">
+
+				<div class="price__block-title-wrap">
 					<div class="price__block-title-line"></div>
 					<h2 class="price__block-title">Индивидуальные съемки</h2>
 					<div class="price__block-title-line"></div>
@@ -75,6 +76,9 @@
 							<img src="upload/thumbnails/021.jpg" alt="price-img" class="price__block-img">
 						</figure>
 						<h3 class="price__card-title">Standart</h3>
+						<div class="price__block-select-wrap-1">
+							
+						</div>
 						<p class="price__cost">2000 руб. час</p>
 						<ul class="price__list">
 							<li class="price__list-elem">20 фото в полной обработке</li>
@@ -100,8 +104,9 @@
 
 			</div>
 
-			<div class="price__block revealator-slideup revealator-delay1 revealator-once">
-				<div class="price__block-wrap-title">
+			<div class="price__block revealator-slideup revealator-delay1 revealator-once" id="price-block2">
+
+				<div class="price__block-title-wrap">
 					<div class="price__block-title-line"></div>
 					<h2 class="price__block-title">Свадьбы</h2>
 					<div class="price__block-title-line"></div>
@@ -126,6 +131,9 @@
 							<img src="upload/thumbnails/008.jpg" alt="price-img" class="price__block-img">
 						</figure>
 						<h3 class="price__card-title">Standart</h3>
+						<div class="price__block-select-wrap-2">
+							
+						</div>
 						<p class="price__cost">2000 руб. час</p>
 						<ul class="price__list">
 							<li class="price__list-elem">20 фото в полной обработке</li>
@@ -152,7 +160,13 @@
 			</div>
 
 			<div class="price__block revealator-slideup revealator-delay1 revealator-once">
-				<h2 class="price__block-title">лав стори, съемки друзей, дни рожденья</h2>
+
+				<div class="price__block-title-wrap">
+					<div class="price__block-title-line"></div>
+					<h2 class="price__block-title">лав стори, съемки друзей, дни рожденья</h2>
+					<div class="price__block-title-line"></div>
+				</div>
+
 				<div class="price__card love-story">
 					<figure class="price__card-img-wrap-1">
 						<img src="upload/thumbnails/002.jpg" alt="price-img" class="price__block-img">
@@ -172,7 +186,13 @@
 			</div>
 
 			<div class="price__block revealator-slideup revealator-delay1 revealator-once">
-				<h2 class="price__block-title">репортажная съемка</h2>
+
+				<div class="price__block-title-wrap">
+					<div class="price__block-title-line"></div>
+					<h2 class="price__block-title">репортажная съемка</h2>
+					<div class="price__block-title-line"></div>
+				</div>
+
 				<div class="price__card reportage">
 					<figure class="price__card-img-wrap-2">
 						<img src="upload/thumbnails/018.jpg" alt="price-img" class="price__block-img">
@@ -253,6 +273,7 @@
 		</div>
 	</footer>
 	<!-- <script src="libs/revealator/fm.revealator.jquery.min.js"></script> -->
+	<script src="js/price.js"></script>
 </body>
 
 </html>

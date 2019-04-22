@@ -5,6 +5,14 @@
 		&__list
 		&__list-link
 			font-size: 30px
+	.price
+		&__block
+			&-wrap
+				&:nth-of-type(n+2) >
+					.price__card
+						&:nth-child(2n+1)
+							display: none
+					
 
 @media only screen and (max-width : 992px)
 	/**/
@@ -16,7 +24,7 @@
 			li
 				font-size: 25px
 	.header
-		background: url('../img/main-logo.png') no-repeat 50% 0%
+		background: url('../img/logo.png') no-repeat 50% 0%
 		background-size: contain
 		height: 100vh
 		width: 100%
