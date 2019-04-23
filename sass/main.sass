@@ -131,7 +131,7 @@ a
 	&:hover
 		transform: scale(1.02)
 
-//-------------------------------------------PRICE
+//-------------------------------------------PRICE---------------------------------------//
 
 .price
 	margin: 10px 0
@@ -140,7 +140,97 @@ a
 		font-size: 60px
 		text-align: center
 		margin-top:	0
-	&__block
+	&__block                          /*добавление линий к заголовкам*/
+		&:first-of-type
+			.price__block-title-wrap
+				display: flex
+				align-items: center
+				justify-content: space-around
+				.price__block-title-line
+						&:first-child
+							background: url(../img/left-line1.png) no-repeat 50% 50%
+							background-size: contain
+							height: 10px
+							width: 400px
+							margin-right: 10px
+						&:last-child
+							background: url(../img/right-line1.png) no-repeat 50% 50%
+							background-size: contain
+							height: 45px
+							width: 400px
+							margin-left: 10px
+		&:nth-of-type(2)
+			.price__block-title-wrap
+				display: flex
+				align-items: center
+				justify-content: space-around
+				.price__block-title-line
+						&:first-child
+							background: url(../img/left-line2.png) no-repeat 50% 50%
+							background-size: contain
+							height: 80px
+							width: 500px
+							margin-right: 10px
+						&:last-child
+							background: url(../img/right-line2.png) no-repeat 50% 50%
+							background-size: contain
+							height: 80px
+							width: 500px
+							margin: -25px 0 0 10px
+		&:nth-of-type(3)
+			.price__block-title-wrap
+				display: flex
+				align-items: center
+				justify-content: space-around
+				.price__block-title-line
+						&:first-child
+							background: url(../img/left-line3.png) no-repeat 50% 50%
+							background-size: contain
+							height: 60px
+							width: 330px
+							margin-right: 10px
+						&:last-child
+							background: url(../img/right-line3.png) no-repeat 50% 50%
+							background-size: contain
+							height: 60px
+							width: 330px
+							margin: 0 0 0 10px
+		&:nth-of-type(4)
+			.price__block-title-wrap
+				display: flex
+				align-items: center
+				justify-content: space-around
+				.price__block-title-line
+						&:first-child
+							background: url(../img/left-line4.png) no-repeat 50% 50%
+							background-size: contain
+							height: 60px
+							width: 250px
+							margin-right: 10px
+						&:last-child
+							background: url(../img/right-line4.png) no-repeat 50% 50%
+							background-size: contain
+							height: 130px
+							width: 270px
+							margin: -100px 0 0 10px
+		&:nth-of-type(5)
+			.price__block-title-wrap
+				display: flex
+				align-items: center
+				justify-content: space-around
+				.price__block-title-line
+						&:first-child
+							background: url(../img/left-line5.png) no-repeat 50% 50%
+							background-size: contain
+							height: 30px
+							width: 270px
+							margin-right: 10px
+						&:last-child
+							background: url(../img/right-line5.png) no-repeat 50% 50%
+							background-size: contain
+							height: 30px
+							width: 280px
+							margin: 20px 0 0 0
 		&-wrap
 			display: flex
 			justify-content: space-between
@@ -149,23 +239,16 @@ a
 			text-align: center
 			font-size: 40px
 			font-family: 'AmaticBold', sans-serif
-			&-wrap
-				display: flex
-				align-items: center
-			&-line
-				&:first-child
-					background: url(../img/left-line1.png) no-repeat 50% 50%
-					background-size: contain
-					height: 10px
-					width: 400px
-					margin-right: 10px
+			color: #140c0c
+		&-select
+			display: none
 		&-img
 			width: 300px
 			height: auto
 	&__card
 		&-title
 			margin-left: 40px
-			font-size: 28px
+			font-size: 35px
 			font-family: 'AmaticBold', sans-serif
 		&-img-wrap-1
 			display: flex
@@ -190,20 +273,23 @@ a
 			font-family: 'AmaticBold', sans-serif
 			font-size: 25px
 			margin-left: 30px
-	&__description
-		margin-left: 50px
-		&:nth-child(2n)
-			margin-right: 50px
+	&__info
+		margin-left: 40px
+		font-size: 35px
+		font-family: 'AmaticBold', sans-serif
 
 .love-story,
-.reportage
+.reportage,
+.shop,
+.certificate
 	display: flex
 	align-items: center
 
 .certificate
-	&__wrapper
-		width: 800px
-		font-size: 20px
+	&__title
+		margin-left: 40px
+		font-size: 35px
+		font-family: 'AmaticBold', sans-serif
 
 .extra-services
 	&__list
